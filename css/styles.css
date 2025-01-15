@@ -429,6 +429,10 @@ video {
     font          : inherit;
     vertical-align: baseline;
 }
+html {
+    background-color: #1A1A1A; 
+    overflow-x: hidden;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -472,24 +476,6 @@ table {
     border-spacing : 0;
 }
 
-
-/* ===================================================================
- * # GRID v5.0.0
- *
- *
- * -------------------------------------------------------------------
- * - Grid system based on the flex display property.
- *
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
- *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- *
- * - Grid columns without a specified width will automatically layout 
- *   as equal width columns.
- *
- * - On viewports 400px and below, all grid columns will stacked 
- *   vertically
- *
- * ------------------------------------------------------------------- */
 
 /* row 
  */
@@ -2792,6 +2778,14 @@ td:last-child {
     width : var(--vspace-0_875);
 }
 
+
+.social-list svg.tg,
+    .social-list svg.in ,
+        .social-list svg.ig {
+    width: 23px;
+}
+
+
 .social-list svg path,
 .social-list svg circle {
     fill      : rgba(255, 255, 255, 0.5);
@@ -3400,11 +3394,13 @@ td:last-child {
     height                  : max(var(--content-min-height), 100vh);
     overflow                : hidden;
     position                : relative;
+    padding-bottom: 50px;
 }
 
 /* --------------------------------------------------------------------
  * ## intro content
  * -------------------------------------------------------------------- */
+ 
 .s-intro__content {
     z-index       : 2;
     align-items   : flex-end;
@@ -3678,6 +3674,7 @@ td:last-child {
 
 .no-js .s-intro__btn-download,
 .ss-show .s-intro__btn-download {
+    margin-bottom: 50px;
     opacity  : 1;
     transform: translateX(0);
 }
@@ -3712,6 +3709,7 @@ td:last-child {
 .ss-show .s-intro__social,
 .ss-show .s-intro__scroll-down {
     transition-delay: 1.2s;
+    margin-bottom: 50px;
 }
 
 .no-js .s-header__inner,
