@@ -3423,12 +3423,12 @@ td:last-child {
 }
 
 .s-intro__content-title {
-    font-size     : clamp(3.8rem, 4.8vw, 8.8rem);
+    font-size     : clamp(3.8rem, 4vw, 7.4rem);
     line-height   : 1.045;
     letter-spacing: -0.025em;
     margin-top    : 0;
     margin-bottom : var(--vspace-1_25);
-    
+    margin: 4rem 0;
 }
 
 .s-intro__content-btns {
