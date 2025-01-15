@@ -102,7 +102,7 @@
    */
     --color-1-lightest: hsla(12, 75%, 75%, 1);
     --color-1-lighter : hsla(12, 75%, 65%, 1);
-    --color-1-light   : hsla(12, 75%, 55%, 1);
+    --color-1-light   : #1010b1;
     --color-1-dark    : hsla(12, 75%, 35%, 1);
     --color-1-darker  : hsla(12, 75%, 25%, 1);
     --color-1-darkest : hsla(12, 75%, 15%, 1);
@@ -477,6 +477,7 @@ table {
 }
 .no-js .s-intro__content-media img, .ss-show .s-intro__content-media img {
     filter: brightness(60%);
+    transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* row 
@@ -3587,7 +3588,7 @@ td:last-child {
 
 .no-js .s-intro__content-media img,
 .ss-show .s-intro__content-media img {
-    transition-delay: 0s;
+    transition-delay: 0.3s;
 }
 
 .no-js .s-intro__content-pretitle,
