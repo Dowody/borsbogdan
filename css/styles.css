@@ -3882,10 +3882,10 @@ td:last-child {
     .ss-show .s-intro__social,
     .ss-show .s-intro__scroll-down {
         transition-delay: 1.2s;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
     .s-intro__btn-download {
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
     .folio-entries .entry__cat {
         width: 100%;
