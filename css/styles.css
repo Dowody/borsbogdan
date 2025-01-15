@@ -477,7 +477,7 @@ table {
 }
 .no-js .s-intro__content-media img, .ss-show .s-intro__content-media img {
     filter: brightness(60%);
-    transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: 1s ease;
 }
 
 /* row 
@@ -3588,7 +3588,7 @@ td:last-child {
 
 .no-js .s-intro__content-media img,
 .ss-show .s-intro__content-media img {
-    transition-delay: 0.3s;
+    transition-delay: 0.45s;
 }
 
 .no-js .s-intro__content-pretitle,
