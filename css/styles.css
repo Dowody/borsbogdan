@@ -827,6 +827,8 @@ table {
  * ## mobile devices (401px to 600px)  
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 600px) {
+
+    
     .row {
         width        : 100%;
         padding-left : 6vw;
@@ -3861,9 +3863,30 @@ td:last-child {
         height: var(--vspace-1_5);
         width : var(--vspace-1_5);
     }
+    .no-js .s-intro__content-media img, .ss-show .s-intro__content-media img {
+        filter: brightness(60%);
+    }
+    .no-js .s-intro__content-pretitle, .ss-show .s-intro__content-pretitle {
+        color: #2c2cff;
+        font-weight: bold;
+    }
+    .s-intro__content-text
+    {
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .folio-entries .entry__cat {
+        width: 100%;
+    }
+    .s-intro__content-title {
+        font-size: clamp(3.5rem, 8.2vw, 8.8rem);
+        line-height: 50px;
+    }
+    .s-intro__content-title span {
+        display: block;
+    }
     .s-intro__content-text {
         max-width: 80vw;
     }
@@ -3880,8 +3903,17 @@ td:last-child {
         display: none;
     }
 }
-
+@media screen and (max-width: 470px) {
+    .s-intro__content-title {
+        font-size: clamp(3.4rem, 8.2vw, 8.8rem);
+        line-height: 37px;
+        padding: 20px 0;
+    }
+}
 @media screen and (max-width: 400px) {
+    .s-intro__content-title {
+        font-size: clamp(3rem, 8.2vw, 8.8rem);
+    }
     .s-intro {
         --content-padding-top: max(10rem, 10vh);
     }
