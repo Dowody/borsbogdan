@@ -3864,7 +3864,7 @@ td:last-child {
         width : var(--vspace-1_5);
     }
     .no-js .s-intro__content-media img, .ss-show .s-intro__content-media img {
-        filter: brightness(60%);
+        filter: brightness(40%);
     }
     .no-js .s-intro__content-pretitle, .ss-show .s-intro__content-pretitle {
         color: #2c2cff;
