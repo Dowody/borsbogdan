@@ -889,6 +889,8 @@ button.swiper-pagination-bullet {
     max-height         : 100vh;
     display            : block;
     padding            : 0;
+    position           : relative;
+    bottom             : 50px;
     float              : none;
     outline            : none;
     border             : none;

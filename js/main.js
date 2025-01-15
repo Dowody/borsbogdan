@@ -312,3 +312,36 @@
     })();
 
 })(document.documentElement);
+
+
+
+// Count Up Projects
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".num");
+    const options = { root: null, threshold: 0.5 };
+
+    const startCounting = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const targetValue = parseInt(target.getAttribute("data-target"));
+                const increment = targetValue / 200;
+                let currentValue = 0;
+
+                const countUp = setInterval(() => {
+                    currentValue += increment;
+                    if (currentValue >= targetValue) {
+                        currentValue = targetValue;
+                        clearInterval(countUp);
+                    }
+                    target.textContent = `${Math.floor(currentValue)}+`;
+                }, 10);
+
+                observer.unobserve(target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(startCounting, options);
+    counters.forEach(counter => observer.observe(counter));
+});
