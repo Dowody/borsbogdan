@@ -475,10 +475,7 @@ table {
     border-collapse: collapse;
     border-spacing : 0;
 }
-.no-js .s-intro__content-media img, .ss-show .s-intro__content-media img {
-    filter: brightness(60%);
-    transition: 1s ease;
-}
+
 
 /* row 
  */
@@ -3660,6 +3657,10 @@ td:last-child {
 }
 
 @media screen and (max-width: 1080px) {
+    .no-js .s-intro__content-media img, .ss-show .s-intro__content-media img {
+        filter: brightness(60%);
+        transition: 1s ease;
+    }
     .s-intro {
         --content-padding-top   : max(12rem, 16vh);
         --content-padding-bottom: 9.6rem;
