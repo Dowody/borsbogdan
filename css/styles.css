@@ -3034,7 +3034,7 @@ td:last-child {
     border : none;
 }
 
-.s-header__logo h1 {
+.s-header__logo h2 {
     color: #ECEEEC;
     font-size: 30px;
     margin        : 0;
