@@ -3659,7 +3659,7 @@ td:last-child {
 @media screen and (max-width: 1080px) {
     .no-js .s-intro__content-media img, .ss-show .s-intro__content-media img {
         filter: brightness(60%);
-        transition: 1s ease;
+        transition: 1.5s ease;
     }
     .s-intro {
         --content-padding-top   : max(12rem, 16vh);
@@ -4056,6 +4056,9 @@ td:last-child {
 
 .s-testimonials__cite {
     display: block;
+}
+.s-testimonials__cite a {
+    color: #0B0BCC;
 }
 
 .s-testimonials__cite strong,

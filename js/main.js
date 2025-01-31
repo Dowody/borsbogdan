@@ -176,36 +176,71 @@
 
    /* swiper
     * ------------------------------------------------------ */ 
+    // const ssSwiper = function() {
+
+    //     const testimonialsSwiper = new Swiper('.s-testimonials__slider', {
+
+    //         slidesPerView: 1,
+    //         pagination: {
+    //             el: '.swiper-pagination',
+    //             clickable: true,
+    //         },
+    //         breakpoints: {
+    //             // when window width is > 400px
+    //             401: {
+    //                 slidesPerView: 1,
+    //                 spaceBetween: 20
+    //             },
+    //             // when window width is > 800px
+    //             801: {
+    //                 slidesPerView: 2,
+    //                 spaceBetween: 50
+    //             },
+    //             // when window width is > 1180px
+    //             1181: {
+    //                 slidesPerView: 3,
+    //                 spaceBetween: 48
+    //             }
+    //         }
+    //     });
+
+    // }; 
+
     const ssSwiper = function() {
-
         const testimonialsSwiper = new Swiper('.s-testimonials__slider', {
-
             slidesPerView: 1,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: false,
+            },
             breakpoints: {
-                // when window width is > 400px
                 401: {
                     slidesPerView: 1,
-                    spaceBetween: 20
+                    spaceBetween: 20,
                 },
-                // when window width is > 800px
                 801: {
                     slidesPerView: 2,
-                    spaceBetween: 50
+                    spaceBetween: 50,
                 },
-                // when window width is > 1180px
                 1181: {
                     slidesPerView: 3,
-                    spaceBetween: 48
+                    spaceBetween: 48,
                 }
             }
         });
-
-    }; // end ssSwiper
-
+    
+        testimonialsSwiper.el.addEventListener('mouseenter', function() {
+            testimonialsSwiper.autoplay.stop();
+        });
+    
+        testimonialsSwiper.el.addEventListener('mouseleave', function() {
+            testimonialsSwiper.autoplay.start();
+        });
+    };
 
    /* alert boxes
     * ------------------------------------------------------ */
